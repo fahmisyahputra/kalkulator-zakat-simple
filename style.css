@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+select:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+
 /* Typography */
 body {
   font-family: "Helvetica Neue", sans-serif;
