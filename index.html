@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Zakat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        
+      <h1 class="nav-title">Kalkulator Zakat</h1>
+      <nav>
+        <ul>
+          <li>
+            <a class="menu-link" href="#">Beranda</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#">Panduan Zakat</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#">Tentang Kami</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Hitung Zakat Anda</h2>
+      <form>
+        <label for="jenis-zakat">Pilih Jenis Zakat:</label>
+        <select id="jenis-zakat" name="jenis-zakat">
+          <!-- <option value="zakat-fitrah">Zakat Fitrah</option> -->
+          <option value="zakat-mal">Zakat Mal</option>
+          <option value="zakat-penghasilan">Zakat Penghasilan</option>
+          <option value="zakat-pertanian">
+            Zakat Pertanian, Perkebunan, dan Kehutanan (air beli)
+          </option>
+          <option value="zakat-pertanian-hujan">
+            Zakat Pertanian, Perkebunan, dan Kehutanan (dari air hujan)
+          </option>
+        </select>
+        <br />
+        <label for="jumlah-zakat">Penghasilan Per Tahun:</label>
+        <input type="text" id="jumlah-zakat" name="jumlah-zakat" />
+        <br />
+        <button type="submit">Hitung</button>
+      </form>
+      <div id="hasil"></div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Kalkulator Zakat - Fahmi Syahputra</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
